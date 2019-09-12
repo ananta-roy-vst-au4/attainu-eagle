@@ -1,0 +1,5 @@
+1. git clone remote-repo-url - clone the remote repo onto the local system
+
+2. git config --[global/local] - change the configuration level of the project
+
+3. 
