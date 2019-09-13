@@ -1,5 +1,49 @@
 1. git clone remote-repo-url - clone the remote repo onto the local system
 
-2. git config --[global/local] - change the configuration level of the project
+2. git config --[global/local] - change the configuration level of the project whether across the OS for all repos or for particular repo on another account
 
-3. 
+3. git init [project name] - to add the git repo to the local system.
+
+4. git add [filename] - to add the files to the staging area
+
+5.  git status - to know which modifications are ready to be committed.
+
+6. git commit -m [commit message] - the commit message describing changes that are to be committed.
+
+7. git remote add [remote-url] - link the remote repo url with the local repo.
+
+8. git push [remote-repo-url] [branch-name] - push the committed changes to the remote repo.
+
+9. git pull [remote-repo-url] [branch-name] - pull the changes in the remote repo to the local system
+
+10. git log - View the commit history for the repo
+
+11. git show [commit-hash-id] - shows the particular commit from the commit history.
+
+12. git branch - shows the list of branches of the repo.
+
+13. git branch [branch-name] - create a new branch with name "branch-name". The new branch has same state as that of the branch from which it is copied
+
+14. git checkout -b [branch-name] - create a new branch and switch to that branch.
+
+15. git diff - shows difference between immediate earlier commit and latest changes that are made.Can also be used to show difference between two branches or commits.
+
+16. .gitignore file - do not include in the repo.
+
+17. git merge [branch-name] - push the changes in the branch-name to the current active branch.
+
+18. git checkout [file-name] - delete the latest changes made to the file-name.
+
+19. git clean -n -  Perform "dry run" of git clean . Will show which files will be removed without actually removing them.
+
+20. git clean -f - force delete the untracked files. 
+
+21.git clean -d - delete the untracked directory.
+
+22. git checkout [commit-hash] - moves the HEAD to the commit with id = commit-hash. 
+NOTE - If we make changes to this commit with id [commit-hash] and try to push
+them to the remote repo, then all the subsequent commits post this commit will be
+deleted. So do not push it directly. Instead make a new branch using git checkout -b [branch-name]
+and then push these changes to the new branch.
+
+23. 
