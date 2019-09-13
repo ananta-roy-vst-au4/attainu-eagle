@@ -49,12 +49,12 @@ and then push these changes to the new branch.
 23. git checkout -[hyphen] - takes user back to previous branch
 
 24. git stash - save the uncommited changes in the local repo temporarily to    
-                keep a clean working copy. NOTE -  these changes are not yet commit
+                keep a clean working copy. NOTE -  these changes are not yet committed.
                 It acts like a clipboard/temporary way of saving our work which is 
                 incomplete and hence we do not commit it.Helpful when have to work
                 on some other thing eg. urgent bug or another branch .
 
-25. git stash pop - restore the temporary saved state.Helps to continue work whether
+25. git stash pop - restore the temporary saved state.Helps to continue work where
                     we left off. 
 
 26. git commit --amend -m [commit-message] - change the latest commit.
